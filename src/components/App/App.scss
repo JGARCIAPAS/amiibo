@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200;300;700&display=swap");
+
+@import "../../assets/styles/querys";
+@import "../../assets/styles/colors";
+@import "../../components/DarkModeButton/DarkModeButton";
+@import "../../components/Header/Header";
+@import "../MenuSeries/MenuSeries";
+@import "../Loading/Loading";
+@import "../../components/Footer/Footer";
+
+body {
+  margin: 0;
+}
+.App {
+  background-color: #ffffff;
+  opacity: 1;
+  background: repeating-linear-gradient(
+    -45deg,
+    #ffe9fb,
+    #ffe9fb 40px,
+    #ffffff 40px,
+    #ffffff 200px
+  );
+}
+.App.dark-mode {
+  background-color: #212157;
+  background: repeating-linear-gradient(
+    -45deg,
+    #911d79,
+    #911d79 40px,
+    #212157 40px,
+    #212157 200px
+  );
+}
+.view-modes {
+  opacity: 0.5;
+}
+a {
+  text-decoration: none;
+}

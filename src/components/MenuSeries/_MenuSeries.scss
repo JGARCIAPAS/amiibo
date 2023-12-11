@@ -1,0 +1,104 @@
+@import "../../assets/styles/colors";
+
+.body-content {
+  overflow: auto;
+  height: calc(100vh - 126px);
+  margin-top: 15px;
+}
+.nav-menu {
+  list-style: none;
+}
+.nav-item {
+  color: white;
+  padding: 40px 10px 10px 30px;
+  width: 84%;
+  border-radius: 20px;
+  margin-bottom: 30px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    z-index: 1;
+  }
+  @include largeScreen() {
+    padding: 0;
+    width: 100%;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    font-family: "Anton", sans-serif;
+    text-shadow: 2px 2px 1px #000;
+  }
+  p {
+    font-family: "Anton", sans-serif;
+    text-shadow: 2px 2px 1px #000;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+$list-menu: ($color-8-bit-mario, $bk-8-bit-mario),
+  ($color-animal-crossing, $bk-animal-crossing), ($color-boxboy, $bk-boxboy),
+  ($color-chibi-robo, $bk-chibi-robo), ($color-diablo, $bk-diablo),
+  ($color-fire-emblem, $bk-fire-emblem), ($color-kirby, $bk-kirby),
+  ($color-legend-zelda, $bk-legend-zelda),
+  ($color-mario-sports-superstars, $bk-mario-sports-superstars),
+  ($color-mega-man, $bk-mega-man), ($color-metroid, $bk-metroid),
+  ($color-monster-hunter, $bk-monster-hunter),
+  ($color-monster-hunter-rise, $bk-monster-hunter-rise),
+  ($color-others, $bk-others), ($color-pikmin, $bk-pikmin),
+  ($color-pokemon, $bk-pokemon), ($color-power-pros, $bk-power-pros),
+  ($color-shovel-knight, $bk-shovel-knight), ($color-skylanders, $bk-skylanders),
+  ($color-splatoon, $bk-splatoon),
+  ($color-super-mario-bros, $bk-super-mario-bros),
+  ($color-super-nintendo-world, $bk-super-nintendo-world),
+  ($color-super-smash-bros, $bk-super-smash-bros),
+  ($color-yoshis-wooll-world, $bk-yoshis-wooll-world),
+  ($color-yu-gi-oh, $bk-yu-gi-oh);
+
+@for $i from 1 through length($list-menu) {
+  $color-value: nth(nth($list-menu, $i), 1);
+  $bk-value: nth(nth($list-menu, $i), 2);
+  .nav-item-#{$i} {
+    background-image: $bk-value;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  .nav-item-#{$i}::after {
+    background: $color-value;
+  }
+}
+
+/* $1: '8-bit Mario', 
+$2: 'Animal Crossing', 
+$3:'BoxBoy!
+$4:'Chibi-Robo!'
+$5:'Diablo'
+$6:'Fire Emblem'
+$7:'Kirby
+$8:'Legend Of Zelda'
+$9: 'Mario Sports Superstars'
+$10:'Mega Man'
+$11:'Metroid'
+$12:'Monster Hunter'
+$13:'Monster Hunter Rise'
+$14: 'Others'
+$15:'Pikmin'
+$16:'Pokemon'
+$17:'Power Pros'
+$18:'Shovel Knight'
+$19:'Skylanders'
+$20:'Splatoon
+$21:'Super Mario Bros.'
+$22:'Super Nintendo World
+$23:'Super Smash Bros.
+$24:Yoshi's Woolly World
+$25:Yu-Gi-Oh!
+*/

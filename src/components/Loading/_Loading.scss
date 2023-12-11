@@ -1,0 +1,60 @@
+@import "../../assets/styles/colors";
+
+.background-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: $default-nintendo-color;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .loading-container {
+    background: $default-nintendo-color;
+    width: 100%;
+    text-align: center;
+    img {
+      height: 60px;
+    }
+    .screen-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .loading-text {
+        display: flex;
+        font-family: "Anton", sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+        //font-family: 'Oswald', sans-serif;
+        p {
+          margin-top: 0px;
+          margin-bottom: 0px;
+          color: $default-light;
+          letter-spacing: 3px;
+        }
+        p:nth-child(2),
+        p:nth-child(3),
+        p:nth-child(4) {
+          opacity: 0;
+          animation: fadeInOut 1s infinite steps(3);
+        }
+      }
+    }
+  }
+}
+
+.dark-mode .loading-container::before,
+.dark-mode .loading-container::after {
+  background: $default-dark-background;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,18 @@
+@import "../../assets/styles/colors";
+
+.footer {
+  background: $default-dark-background;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: $default-light;
+  font-family: "Oswald", sans-serif;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: $footer-line-color;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}

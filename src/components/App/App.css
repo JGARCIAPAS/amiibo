@@ -1,0 +1,512 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200;300;700&display=swap");
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 5px;
+  z-index: 999;
+  width: 30px;
+  height: 60px;
+  background-color: #eed275;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  opacity: 0.8;
+}
+.slide-btn.on {
+  background: #7037d8;
+}
+.slide-btn.on .inner-circle {
+  transform: translateY(100%);
+}
+.slide-btn .icon-mode {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.inner-circle {
+  width: 26px;
+  height: 26px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.header-wrapper {
+  height: 50px;
+}
+
+.header {
+  background: #000000;
+  width: 100%;
+  height: 40px;
+  border-bottom: 5px solid #ff0000;
+}
+.header h1 {
+  margin: 0;
+  top: 8px;
+  right: 20px;
+  text-align: right;
+  position: absolute;
+  z-index: 1;
+  font-family: "Oswald", sans-serif;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 80%;
+  height: 60px;
+  background: linear-gradient(133deg, rgb(162, 162, 162) 8%, rgb(240, 240, 240) 100%);
+  -webkit-clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 500%);
+          clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 500%);
+  box-shadow: 0px 5px 0px #ff0000;
+}
+
+.body-content {
+  overflow: auto;
+  height: calc(100vh - 126px);
+  margin-top: 15px;
+}
+
+.nav-menu {
+  list-style: none;
+}
+
+.nav-item {
+  color: white;
+  padding: 40px 10px 10px 30px;
+  width: 84%;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+.nav-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  z-index: 1;
+}
+@media screen and (min-width: 900px) {
+  .nav-item {
+    padding: 0;
+    width: 100%;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    font-family: "Anton", sans-serif;
+    text-shadow: 2px 2px 1px #000;
+  }
+}
+.nav-item p {
+  font-family: "Anton", sans-serif;
+  text-shadow: 2px 2px 1px #000;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.nav-item-1 {
+  background-image: url("img/backs/01.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav-item-1::after {
+  background: linear-gradient(9deg, rgb(255, 0, 0) 44%, rgb(100, 0, 0) 100%);
+}
+
+.nav-item-2 {
+  background-image: url("img/backs/02.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav-item-2::after {
+  background: linear-gradient(9deg, rgb(65, 176, 97) 44%, rgb(16, 71, 25) 100%);
+}
+
+.nav-item-3 {
+  background-image: url("img/backs/03.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav-item-3::after {
+  background: linear-gradient(9deg, rgb(75, 75, 75) 44%, rgb(0, 0, 0) 100%);
+}
+
+.nav-item-4 {
+  background-image: url("img/backs/04.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav-item-4::after {
+  background: linear-gradient(9deg, rgb(123, 125, 124) 44%, rgb(0, 0, 0) 100%);
+}
+
+.nav-item-5 {
+  background-image: url("img/backs/05.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav-item-5::after {
+  background: linear-gradient(16deg, rgb(130, 17, 17) 44%, rgb(0, 0, 0) 100%);
+}
+
+.nav-item-6 {
+  background-image: url("img/backs/06.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav-item-6::after {
+  background: linear-gradient(16deg, rgb(100, 25, 116) 44%, rgb(0, 0, 0) 100%);
+}
+
+.nav-item-7 {
+  background-image: url("img/backs/07.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav-item-7::after {
+  background: linear-gradient(16deg, rgb(255, 152, 218) 44%, rgb(255, 227, 254) 100%);
+}
+
+.nav-item-8 {
+  background-image: url("img/backs/08.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav-item-8::after {
+  background: linear-gradient(16deg, rgb(0, 127, 198) 44%, rgb(9, 55, 94) 100%);
+}
+
+.nav-item-9 {
+  background-image: url("img/backs/09.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav-item-9::after {
+  background: linear-gradient(16deg, rgb(255, 0, 0) 44%, rgb(255, 218, 0) 100%);
+}
+
+.nav-item-10 {
+  background-image: url("img/backs/10.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav-item-10::after {
+  background: linear-gradient(158deg, rgb(0, 151, 255) 44%, rgb(1, 10, 181) 100%);
+}
+
+.nav-item-11 {
+  background-image: url("img/backs/11.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav-item-11::after {
+  background: linear-gradient(90deg, rgb(0, 224, 255) 44%, rgb(0, 138, 111) 100%);
+}
+
+.nav-item-12 {
+  background-image: url("img/backs/12.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav-item-12::after {
+  background: linear-gradient(90deg, rgb(138, 81, 12) 44%, rgb(23, 12, 0) 100%);
+}
+
+.nav-item-13 {
+  background-image: url("img/backs/13.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav-item-13::after {
+  background: linear-gradient(90deg, rgb(133, 106, 74) 44%, rgb(84, 44, 0) 100%);
+}
+
+.nav-item-14 {
+  background-image: url("img/backs/14.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav-item-14::after {
+  background: linear-gradient(90deg, rgb(125, 163, 129) 44%, rgb(42, 55, 34) 100%);
+}
+
+.nav-item-15 {
+  background-image: url("img/backs/15.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav-item-15::after {
+  background: linear-gradient(90deg, rgb(91, 255, 0) 34%, rgb(249, 255, 0) 100%);
+}
+
+.nav-item-16 {
+  background-image: url("img/backs/16.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav-item-16::after {
+  background: linear-gradient(43deg, rgb(255, 252, 0) 37%, rgb(255, 214, 0) 100%);
+}
+
+.nav-item-17 {
+  background-image: url("img/backs/17.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav-item-17::after {
+  background: linear-gradient(98deg, rgb(22, 49, 166) 37%, rgb(0, 0, 0) 100%);
+}
+
+.nav-item-18 {
+  background-image: url("img/backs/18.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav-item-18::after {
+  background: linear-gradient(98deg, rgb(60, 204, 254) 37%, rgb(48, 47, 152) 100%);
+}
+
+.nav-item-19 {
+  background-image: url("img/backs/19.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav-item-19::after {
+  background: linear-gradient(98deg, rgb(190, 60, 254) 37%, rgb(48, 47, 152) 100%);
+}
+
+.nav-item-20 {
+  background-image: url("img/backs/20.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav-item-20::after {
+  background: linear-gradient(22deg, rgb(252, 60, 254) 30%, rgb(0, 255, 196) 100%);
+}
+
+.nav-item-21 {
+  background-image: url("img/backs/21.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav-item-21::after {
+  background: linear-gradient(22deg, rgb(255, 69, 69) 30%, rgb(57, 0, 0) 100%);
+}
+
+.nav-item-22 {
+  background-image: url("img/backs/22.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav-item-22::after {
+  background: linear-gradient(22deg, rgb(255, 0, 0) 8%, rgb(110, 19, 79) 100%);
+}
+
+.nav-item-23 {
+  background-image: url("img/backs/23.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav-item-23::after {
+  background: linear-gradient(22deg, rgb(237, 199, 55) 8%, rgb(182, 131, 0) 100%);
+}
+
+.nav-item-24 {
+  background-image: url("img/backs/24.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav-item-24::after {
+  background: linear-gradient(22deg, rgb(88, 223, 28) 8%, rgb(2, 88, 76) 100%);
+}
+
+.nav-item-25 {
+  background-image: url("img/backs/25.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav-item-25::after {
+  background: linear-gradient(22deg, rgb(223, 28, 91) 8%, rgb(88, 2, 40) 100%);
+}
+
+/* $1: '8-bit Mario', 
+$2: 'Animal Crossing', 
+$3:'BoxBoy!
+$4:'Chibi-Robo!'
+$5:'Diablo'
+$6:'Fire Emblem'
+$7:'Kirby
+$8:'Legend Of Zelda'
+$9: 'Mario Sports Superstars'
+$10:'Mega Man'
+$11:'Metroid'
+$12:'Monster Hunter'
+$13:'Monster Hunter Rise'
+$14: 'Others'
+$15:'Pikmin'
+$16:'Pokemon'
+$17:'Power Pros'
+$18:'Shovel Knight'
+$19:'Skylanders'
+$20:'Splatoon
+$21:'Super Mario Bros.'
+$22:'Super Nintendo World
+$23:'Super Smash Bros.
+$24:Yoshi's Woolly World
+$25:Yu-Gi-Oh!
+*/
+.background-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ff0000;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background-loading .loading-container {
+  background: #ff0000;
+  width: 100%;
+  text-align: center;
+}
+.background-loading .loading-container img {
+  height: 60px;
+}
+.background-loading .loading-container .screen-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background-loading .loading-container .screen-text .loading-text {
+  display: flex;
+  font-family: "Anton", sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+.background-loading .loading-container .screen-text .loading-text p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #fff;
+  letter-spacing: 3px;
+}
+.background-loading .loading-container .screen-text .loading-text p:nth-child(2),
+.background-loading .loading-container .screen-text .loading-text p:nth-child(3),
+.background-loading .loading-container .screen-text .loading-text p:nth-child(4) {
+  opacity: 0;
+  animation: fadeInOut 1s infinite steps(3);
+}
+
+.dark-mode .loading-container::before,
+.dark-mode .loading-container::after {
+  background: #252525;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.footer {
+  background: #252525;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(90deg, rgba(255, 0, 0, 0) 0%, rgb(255, 0, 0) 25%, rgb(255, 0, 0) 50%, rgb(255, 0, 0) 75%, rgba(255, 0, 0, 0) 100%);
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.App {
+  background-color: #ffffff;
+  opacity: 1;
+  background: repeating-linear-gradient(-45deg, #ffe9fb, #ffe9fb 40px, #ffffff 40px, #ffffff 200px);
+}
+
+.App.dark-mode {
+  background-color: #212157;
+  background: repeating-linear-gradient(-45deg, #911d79, #911d79 40px, #212157 40px, #212157 200px);
+}
+
+.view-modes {
+  opacity: 0.5;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=App.css.map */
