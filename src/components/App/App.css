@@ -115,7 +115,7 @@
 }
 
 .nav-item-1 {
-  background-image: url("img/backs/01.png");
+  background-image: url("/src/assets/img/backs/01.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -126,7 +126,7 @@
 }
 
 .nav-item-2 {
-  background-image: url("img/backs/02.png");
+  background-image: url("/src/assets/img/backs/02.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -137,7 +137,7 @@
 }
 
 .nav-item-3 {
-  background-image: url("img/backs/03.png");
+  background-image: url("/src/assets/img/backs/03.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -148,7 +148,7 @@
 }
 
 .nav-item-4 {
-  background-image: url("img/backs/04.png");
+  background-image: url("/src/assets/img/backs/04.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -159,7 +159,7 @@
 }
 
 .nav-item-5 {
-  background-image: url("img/backs/05.png");
+  background-image: url("/src/assets/img/backs/05.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -170,7 +170,7 @@
 }
 
 .nav-item-6 {
-  background-image: url("img/backs/06.png");
+  background-image: url("/src/assets/img/backs/06.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -181,7 +181,7 @@
 }
 
 .nav-item-7 {
-  background-image: url("img/backs/07.png");
+  background-image: url("/src/assets/img/backs/07.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -192,7 +192,7 @@
 }
 
 .nav-item-8 {
-  background-image: url("img/backs/08.png");
+  background-image: url("/src/assets/img/backs/08.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -203,7 +203,7 @@
 }
 
 .nav-item-9 {
-  background-image: url("img/backs/09.png");
+  background-image: url("/src/assets/img/backs/09.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -214,7 +214,7 @@
 }
 
 .nav-item-10 {
-  background-image: url("img/backs/10.png");
+  background-image: url("/src/assets/img/backs/10.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -225,7 +225,7 @@
 }
 
 .nav-item-11 {
-  background-image: url("img/backs/11.png");
+  background-image: url("/src/assets/img/backs/11.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -236,7 +236,7 @@
 }
 
 .nav-item-12 {
-  background-image: url("img/backs/12.png");
+  background-image: url("/src/assets/img/backs/12.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -247,7 +247,7 @@
 }
 
 .nav-item-13 {
-  background-image: url("img/backs/13.png");
+  background-image: url("/src/assets/img/backs/13.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -258,7 +258,7 @@
 }
 
 .nav-item-14 {
-  background-image: url("img/backs/14.png");
+  background-image: url("/src/assets/img/backs/14.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -269,7 +269,7 @@
 }
 
 .nav-item-15 {
-  background-image: url("img/backs/15.png");
+  background-image: url("/src/assets/img/backs/15.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -280,7 +280,7 @@
 }
 
 .nav-item-16 {
-  background-image: url("img/backs/16.png");
+  background-image: url("/src/assets/img/backs/16.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -291,7 +291,7 @@
 }
 
 .nav-item-17 {
-  background-image: url("img/backs/17.png");
+  background-image: url("/src/assets/img/backs/17.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -302,7 +302,7 @@
 }
 
 .nav-item-18 {
-  background-image: url("img/backs/18.png");
+  background-image: url("/src/assets/img/backs/18.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -313,7 +313,7 @@
 }
 
 .nav-item-19 {
-  background-image: url("img/backs/19.png");
+  background-image: url("/src/assets/img/backs/19.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -324,7 +324,7 @@
 }
 
 .nav-item-20 {
-  background-image: url("img/backs/20.png");
+  background-image: url("/src/assets/img/backs/20.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -335,7 +335,7 @@
 }
 
 .nav-item-21 {
-  background-image: url("img/backs/21.png");
+  background-image: url("/src/assets/img/backs/21.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -346,7 +346,7 @@
 }
 
 .nav-item-22 {
-  background-image: url("img/backs/22.png");
+  background-image: url("/src/assets/img/backs/22.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -357,7 +357,7 @@
 }
 
 .nav-item-23 {
-  background-image: url("img/backs/23.png");
+  background-image: url("/src/assets/img/backs/23.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -368,7 +368,7 @@
 }
 
 .nav-item-24 {
-  background-image: url("img/backs/24.png");
+  background-image: url("/src/assets/img/backs/24.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -379,7 +379,7 @@
 }
 
 .nav-item-25 {
-  background-image: url("img/backs/25.png");
+  background-image: url("/src/assets/img/backs/25.png");
   background-size: cover;
   background-position: center;
   position: relative;
