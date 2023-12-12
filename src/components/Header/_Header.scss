@@ -15,6 +15,11 @@
     position: absolute;
     z-index: 1;
     font-family: "Oswald", sans-serif;
+    color: $default-dark;
+    max-width: 59%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   &::after {
     content: "";
@@ -26,5 +31,14 @@
     background: $main-header-color-grad;
     clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 500%);
     box-shadow: 0px 5px 0px $default-nintendo-color;
+  }
+  button {
+    background: $back-header-color;
+    border: none;
+    padding-top: 8px;
+    .home-icon {
+      color: $default-light-background;
+      font-size: 25px;
+    }
   }
 }

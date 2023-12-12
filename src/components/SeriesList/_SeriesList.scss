@@ -1,0 +1,14 @@
+@import "../../assets/styles/colors";
+
+ul.amiibo-list {
+  list-style: none;
+  padding: 0px;
+  text-align: center;
+  width: 100%;
+  li {
+    img {
+      width: 50%;
+      margin-top: 50px;
+    }
+  }
+}

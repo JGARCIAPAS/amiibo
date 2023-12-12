@@ -11,16 +11,19 @@ import SeriesList from "../SeriesList/SeriesList";
 
 const App = () => {
   const [amiiboList, setAmiiboList] = useState<Amiibo | null>(null);
+  const [amiiboSeries, setAmiiboSeries] = useState("");
+  const [lastUpdate, setLastUpdate] = useState<Date | null>(null);
   useEffect(() => {
-    fetch("https://amiiboapi.com/api/amiibo/")
-      .then((response) => {
-        if (!response.ok) {
-          console.log("response error");
-        }
-        return response.json();
-      })
+    Promise.all([
+      fetch("https://amiiboapi.com/api/amiibo/"),
+      fetch("https://amiiboapi.com/api/lastupdated/"),
+    ])
+      .then((responses) =>
+        Promise.all(responses.map((response) => response.json()))
+      )
       .then((data) => {
-        setAmiiboList(data.amiibo);
+        setAmiiboList(data[0].amiibo);
+        setLastUpdate(data[1].lastUpdated);
       })
       .catch((error) => {
         console.error("fetch error", error);
@@ -31,20 +34,29 @@ const App = () => {
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
+  const handleSeries = (seriesName: string) => {
+    setAmiiboSeries(seriesName);
+  };
+  const resetSeriesName = () => {
+    setAmiiboSeries("");
+  };
   return (
     <div className={darkMode ? "App dark-mode" : "App"}>
       <DarkModeButton darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      {amiiboList ? (
+      {amiiboList && lastUpdate ? (
         <div>
-          <Header />
+          <Header seriesName={amiiboSeries} resetSeriesName={resetSeriesName} />
           <Routes>
             <Route
-              path={"/amiibo"}
+              path={"/amiibo/"}
               element={<MenuSeries amiiboList={amiiboList} />}
             />
-            <Route path={"/amiibo/:series"} element={<SeriesList />} />
+            <Route
+              path={"/amiibo/:series"}
+              element={<SeriesList amiiboSeries={handleSeries} />}
+            />
           </Routes>
-          <Footer />
+          <Footer seriesName={amiiboSeries} lastUpdate={lastUpdate} />
         </div>
       ) : (
         <Loading />
