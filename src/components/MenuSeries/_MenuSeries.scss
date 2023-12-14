@@ -7,6 +7,14 @@
 }
 .nav-menu {
   list-style: none;
+  @include largeScreen() {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+.link-nav-item {
+  cursor: initial;
 }
 .nav-item {
   color: white;
@@ -14,6 +22,13 @@
   width: 84%;
   border-radius: 20px;
   margin-bottom: 30px;
+  cursor: pointer;
+  &:hover {
+    border: 6px solid;
+    border-image-slice: 1;
+    border-width: 6px;
+    border-image-source: $gradient-border-hover;
+  }
 
   &::after {
     content: "";
@@ -25,22 +40,95 @@
     height: 100%;
     border-radius: 20px;
     z-index: 1;
+    @include largeScreen() {
+      border-radius: 0px;
+    }
   }
+
   @include largeScreen() {
-    padding: 0;
-    width: 100%;
-    border-radius: 0px;
-    margin-bottom: 0px;
+    border-radius: 0;
     font-family: "Anton", sans-serif;
-    text-shadow: 2px 2px 1px #000;
+    padding: 60px 5px 5px 5px;
+    box-shadow: 10px 10px 0px $default-dark;
+    border: 6px solid $default-dark;
+    width: 95%;
   }
   p {
     font-family: "Anton", sans-serif;
-    text-shadow: 2px 2px 1px #000;
+    text-shadow: 2px 2px 1px $default-dark;
     margin: 0;
     position: relative;
     z-index: 2;
   }
+}
+.nav-item-2,
+.nav-item-9,
+.nav-item-11,
+.nav-item-16,
+.nav-item-20 {
+  @include largeScreen() {
+    padding: 150px 5px 5px 5px;
+  }
+}
+.nav-item-1,
+.nav-item-7,
+.nav-item-10,
+.nav-item-15,
+.nav-item-21 {
+  @include largeScreen() {
+    padding: 200px 5px 5px 5px;
+  }
+}
+.nav-item-8,
+.nav-item-23 {
+  @include largeScreen() {
+    padding: 300px 5px 5px 5px;
+  }
+}
+.nav-item-5,
+.nav-item-6,
+.nav-item-13,
+.nav-item-18,
+.nav-item-24 {
+  @include largeScreen() {
+    padding: 100px 5px 5px 5px;
+  }
+}
+.link-nav-item:nth-child(4),
+.link-nav-item:nth-child(10),
+.link-nav-item:nth-child(14) {
+  width: 5%;
+}
+.link-nav-item:nth-child(3),
+.link-nav-item:nth-child(5),
+.link-nav-item:nth-child(6),
+.link-nav-item:nth-child(12),
+.link-nav-item:nth-child(17),
+.link-nav-item:nth-child(19) {
+  width: 10%;
+}
+.link-nav-item:nth-child(1),
+.link-nav-item:nth-child(11),
+.link-nav-item:nth-child(13),
+.link-nav-item:nth-child(15),
+.link-nav-item:nth-child(18),
+.link-nav-item:nth-child(23) {
+  width: 20%;
+}
+.link-nav-item:nth-child(7),
+.link-nav-item:nth-child(9),
+.link-nav-item:nth-child(16),
+.link-nav-item:nth-child(20),
+.link-nav-item:nth-child(24) {
+  width: 30%;
+}
+.link-nav-item:nth-child(2),
+.link-nav-item:nth-child(21) {
+  width: 40%;
+}
+.link-nav-item:nth-child(8),
+.link-nav-item:nth-child(23) {
+  width: 50%;
 }
 
 $list-menu: ($color-8-bit-mario, $bk-8-bit-mario),
@@ -75,30 +163,3 @@ $list-menu: ($color-8-bit-mario, $bk-8-bit-mario),
     background: $color-value;
   }
 }
-
-/* $1: '8-bit Mario', 
-$2: 'Animal Crossing', 
-$3:'BoxBoy!
-$4:'Chibi-Robo!'
-$5:'Diablo'
-$6:'Fire Emblem'
-$7:'Kirby
-$8:'Legend Of Zelda'
-$9: 'Mario Sports Superstars'
-$10:'Mega Man'
-$11:'Metroid'
-$12:'Monster Hunter'
-$13:'Monster Hunter Rise'
-$14: 'Others'
-$15:'Pikmin'
-$16:'Pokemon'
-$17:'Power Pros'
-$18:'Shovel Knight'
-$19:'Skylanders'
-$20:'Splatoon
-$21:'Super Mario Bros.'
-$22:'Super Nintendo World
-$23:'Super Smash Bros.
-$24:Yoshi's Woolly World
-$25:Yu-Gi-Oh!
-*/

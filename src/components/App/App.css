@@ -91,6 +91,17 @@
 .nav-menu {
   list-style: none;
 }
+@media screen and (min-width: 900px) {
+  .nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+.link-nav-item {
+  cursor: initial;
+}
 
 .nav-item {
   color: white;
@@ -98,6 +109,13 @@
   width: 84%;
   border-radius: 20px;
   margin-bottom: 30px;
+  cursor: pointer;
+}
+.nav-item:hover {
+  border: 6px solid;
+  border-image-slice: 1;
+  border-width: 6px;
+  border-image-source: linear-gradient(103deg, rgb(249, 255, 0) 0%, rgb(255, 0, 0) 25%, rgb(249, 255, 0) 75%, rgb(255, 0, 0) 100%);
 }
 .nav-item::after {
   content: "";
@@ -111,21 +129,105 @@
   z-index: 1;
 }
 @media screen and (min-width: 900px) {
-  .nav-item {
-    padding: 0;
-    width: 100%;
+  .nav-item::after {
     border-radius: 0px;
-    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .nav-item {
+    border-radius: 0;
     font-family: "Anton", sans-serif;
-    text-shadow: 2px 2px 1px #000;
+    padding: 60px 5px 5px 5px;
+    box-shadow: 10px 10px 0px #252525;
+    border: 6px solid #252525;
+    width: 95%;
   }
 }
 .nav-item p {
   font-family: "Anton", sans-serif;
-  text-shadow: 2px 2px 1px #000;
+  text-shadow: 2px 2px 1px #252525;
   margin: 0;
   position: relative;
   z-index: 2;
+}
+
+@media screen and (min-width: 900px) {
+  .nav-item-2,
+  .nav-item-9,
+  .nav-item-11,
+  .nav-item-16,
+  .nav-item-20 {
+    padding: 150px 5px 5px 5px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .nav-item-1,
+  .nav-item-7,
+  .nav-item-10,
+  .nav-item-15,
+  .nav-item-21 {
+    padding: 200px 5px 5px 5px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .nav-item-8,
+  .nav-item-23 {
+    padding: 300px 5px 5px 5px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .nav-item-5,
+  .nav-item-6,
+  .nav-item-13,
+  .nav-item-18,
+  .nav-item-24 {
+    padding: 100px 5px 5px 5px;
+  }
+}
+
+.link-nav-item:nth-child(4),
+.link-nav-item:nth-child(10),
+.link-nav-item:nth-child(14) {
+  width: 5%;
+}
+
+.link-nav-item:nth-child(3),
+.link-nav-item:nth-child(5),
+.link-nav-item:nth-child(6),
+.link-nav-item:nth-child(12),
+.link-nav-item:nth-child(17),
+.link-nav-item:nth-child(19) {
+  width: 10%;
+}
+
+.link-nav-item:nth-child(1),
+.link-nav-item:nth-child(11),
+.link-nav-item:nth-child(13),
+.link-nav-item:nth-child(15),
+.link-nav-item:nth-child(18),
+.link-nav-item:nth-child(23) {
+  width: 20%;
+}
+
+.link-nav-item:nth-child(7),
+.link-nav-item:nth-child(9),
+.link-nav-item:nth-child(16),
+.link-nav-item:nth-child(20),
+.link-nav-item:nth-child(24) {
+  width: 30%;
+}
+
+.link-nav-item:nth-child(2),
+.link-nav-item:nth-child(21) {
+  width: 40%;
+}
+
+.link-nav-item:nth-child(8),
+.link-nav-item:nth-child(23) {
+  width: 50%;
 }
 
 .nav-item-1 {
@@ -403,32 +505,6 @@
   background: linear-gradient(22deg, rgb(223, 28, 91) 8%, rgb(88, 2, 40) 100%);
 }
 
-/* $1: '8-bit Mario', 
-$2: 'Animal Crossing', 
-$3:'BoxBoy!
-$4:'Chibi-Robo!'
-$5:'Diablo'
-$6:'Fire Emblem'
-$7:'Kirby
-$8:'Legend Of Zelda'
-$9: 'Mario Sports Superstars'
-$10:'Mega Man'
-$11:'Metroid'
-$12:'Monster Hunter'
-$13:'Monster Hunter Rise'
-$14: 'Others'
-$15:'Pikmin'
-$16:'Pokemon'
-$17:'Power Pros'
-$18:'Shovel Knight'
-$19:'Skylanders'
-$20:'Splatoon
-$21:'Super Mario Bros.'
-$22:'Super Nintendo World
-$23:'Super Smash Bros.
-$24:Yoshi's Woolly World
-$25:Yu-Gi-Oh!
-*/
 .background-loading {
   position: absolute;
   top: 0;
@@ -485,15 +561,87 @@ $25:Yu-Gi-Oh!
     opacity: 1;
   }
 }
-ul.amiibo-list {
+.amiibo-block-type {
+  margin: 30px 0px 30px 30px;
+}
+.amiibo-block-type .amiibo-name-type {
+  background: #ff0000;
+  color: #fff;
+  padding: 10px 0px 10px 10px;
+  width: 80%;
+  -webkit-clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 90% 100%);
+          clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 90% 100%);
+}
+.amiibo-block-type .amiibo-name-type h2 {
+  margin: 0;
+  font-family: "Anton", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.amiibo-block-type ul.amiibo-list {
   list-style: none;
   padding: 0px;
   text-align: center;
   width: 100%;
+  margin: 0;
+  justify-content: center;
 }
-ul.amiibo-list li img {
+@media screen and (min-width: 900px) {
+  .amiibo-block-type ul.amiibo-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+  }
+}
+.amiibo-block-type ul.amiibo-list li img {
+  padding: 0px 10px;
   width: 50%;
   margin-top: 50px;
+}
+@media screen and (min-width: 900px) {
+  .amiibo-block-type ul.amiibo-list li img {
+    height: 150px;
+    margin-top: 0;
+    width: auto;
+  }
+}
+.amiibo-block-type ul.amiibo-list li p {
+  font-family: "Oswald", sans-serif;
+  padding: 5px 0px 5px 0px;
+  margin: 0px;
+  color: #252525;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 3px;
+  border-image-source: linear-gradient(90deg, rgba(255, 0, 0, 0) 0%, rgb(255, 0, 0) 25%, rgb(255, 0, 0) 50%, rgb(255, 0, 0) 75%, rgba(255, 0, 0, 0) 100%);
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+@media screen and (min-width: 900px) {
+  .amiibo-block-type ul.amiibo-list li {
+    padding: 10px 5px 10px 5px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .amiibo-block-type ul.amiibo-list li:hover {
+    border-radius: 10px;
+    background-color: #faf07e;
+    background-image: linear-gradient(30deg, #d8c072 12%, transparent 12.5%, transparent 87%, #d8c072 87.5%, #d8c072), linear-gradient(150deg, #d8c072 12%, transparent 12.5%, transparent 87%, #d8c072 87.5%, #d8c072), linear-gradient(30deg, #d8c072 12%, transparent 12.5%, transparent 87%, #d8c072 87.5%, #d8c072), linear-gradient(150deg, #d8c072 12%, transparent 12.5%, transparent 87%, #d8c072 87.5%, #d8c072), linear-gradient(60deg, rgba(216, 192, 114, 0.4666666667) 25%, transparent 25.5%, transparent 75%, rgba(216, 192, 114, 0.4666666667) 75%, rgba(216, 192, 114, 0.4666666667)), linear-gradient(60deg, rgba(216, 192, 114, 0.4666666667) 25%, transparent 25.5%, transparent 75%, rgba(216, 192, 114, 0.4666666667) 75%, rgba(216, 192, 114, 0.4666666667));
+    background-size: 8px 14px;
+    background-position: 0 0, 0 0, 4px 7px, 4px 7px, 0 0, 4px 7px;
+  }
+}
+
+.dark-mode .amiibo-block-type ul.amiibo-list p {
+  color: #fff;
+}
+
+@media screen and (min-width: 900px) {
+  .dark-mode .amiibo-block-type ul.amiibo-list li:hover p {
+    color: #252525;
+  }
 }
 
 .footer {

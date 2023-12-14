@@ -24,7 +24,11 @@ const MenuSeries: React.FC<MenuSeriesProps> = (MenuSeriesProps) => {
     <div className="body-content">
       <ul className="nav-menu">
         {AmiiboSeriesArrayOrdered.map((series, index) => (
-          <Link key={index} to={`${encodeURIComponent(series)}`}>
+          <Link
+            className="link-nav-item"
+            key={index}
+            to={`${encodeURIComponent(series)}`}
+          >
             <li className={`nav-item nav-item-${index + 1}`}>
               <p>{series}</p>
             </li>

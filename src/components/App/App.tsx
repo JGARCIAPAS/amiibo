@@ -8,6 +8,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { Route, Routes } from "react-router-dom";
 import SeriesList from "../SeriesList/SeriesList";
+import AmiiboItem from "../AmiiboItem/AmiiboItem";
 
 const App = () => {
   const [amiiboList, setAmiiboList] = useState<Amiibo | null>(null);
@@ -55,6 +56,7 @@ const App = () => {
               path={"/amiibo/:series"}
               element={<SeriesList amiiboSeries={handleSeries} />}
             />
+            <Route path={"/amiibo/:series/:item"} element={<AmiiboItem />} />
           </Routes>
           <Footer seriesName={amiiboSeries} lastUpdate={lastUpdate} />
         </div>

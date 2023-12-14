@@ -170,6 +170,63 @@ $bk-super-smash-bros: url("/src/assets/img/backs/23.png");
 $bk-yoshis-wooll-world: url("/src/assets/img/backs/24.png");
 $bk-yu-gi-oh: url("/src/assets/img/backs/25.png");
 
+//borders
+$gradient-border-hover: linear-gradient(
+  103deg,
+  rgba(249, 255, 0, 1) 0%,
+  rgba(255, 0, 0, 1) 25%,
+  rgba(249, 255, 0, 1) 75%,
+  rgba(255, 0, 0, 1) 100%
+);
+$gold-card-back: linear-gradient(
+    30deg,
+    #d8c072 12%,
+    transparent 12.5%,
+    transparent 87%,
+    #d8c072 87.5%,
+    #d8c072
+  ),
+  linear-gradient(
+    150deg,
+    #d8c072 12%,
+    transparent 12.5%,
+    transparent 87%,
+    #d8c072 87.5%,
+    #d8c072
+  ),
+  linear-gradient(
+    30deg,
+    #d8c072 12%,
+    transparent 12.5%,
+    transparent 87%,
+    #d8c072 87.5%,
+    #d8c072
+  ),
+  linear-gradient(
+    150deg,
+    #d8c072 12%,
+    transparent 12.5%,
+    transparent 87%,
+    #d8c072 87.5%,
+    #d8c072
+  ),
+  linear-gradient(
+    60deg,
+    #d8c07277 25%,
+    transparent 25.5%,
+    transparent 75%,
+    #d8c07277 75%,
+    #d8c07277
+  ),
+  linear-gradient(
+    60deg,
+    #d8c07277 25%,
+    transparent 25.5%,
+    transparent 75%,
+    #d8c07277 75%,
+    #d8c07277
+  );
+
 //footer colors
 
 $footer-line-color: linear-gradient(
