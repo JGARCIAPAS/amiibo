@@ -1,0 +1,124 @@
+@import "../../assets/styles/colors";
+
+.amiibo-card {
+  background-color: transparent;
+  height: 250px;
+  width: 200px;
+  perspective: 1000px;
+  margin: 20px;
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.9);
+  }
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+  }
+  .flip-card-front {
+    background-color: #faf07e;
+    background-image: $card-front;
+    background-size: 8px 14px;
+    background-position: 0 0, 0 0, 4px 7px, 4px 7px, 0 0, 4px 7px;
+    .amiibo-card-image {
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        max-height: 211.16px;
+        max-width: 100%;
+      }
+    }
+    .amiibo-card-name {
+      position: absolute;
+      width: 100%;
+      bottom: 5px;
+      text-align: center;
+      p {
+        font-family: "Oswald", sans-serif;
+        margin: 0px;
+        color: $default-dark;
+        border: 10px solid;
+        border-image-slice: 1;
+        border-width: 3px;
+        border-image-source: $footer-line-color;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 0;
+      }
+    }
+  }
+
+  .flip-card-back {
+    background-image: $card-back;
+    background-color: #e6e6e9;
+    opacity: 0.8;
+    background-image: $card-back;
+    background-size: 8px 14px;
+    background-position: 0 0, 0 0, 4px 7px, 4px 7px, 0 0, 4px 7px;
+
+    color: black;
+    transform: rotateY(180deg);
+    h3 {
+      font-family: "Oswald", sans-serif;
+      background: $rainbow;
+      padding: 7px 0px;
+    }
+    p {
+      font-family: "Oswald", sans-serif;
+    }
+    button {
+      font-family: "Oswald", sans-serif;
+      background-image: linear-gradient(
+        to right,
+        #f2994a 0%,
+        #f2c94c 51%,
+        #f2994a 100%
+      );
+      margin: 10px auto;
+      padding: 5px 15px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      box-shadow: 0 0 20px #eee;
+      border-radius: 10px;
+      display: block;
+      border: none;
+      a {
+        color: white;
+      }
+      &:hover {
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.amiibo-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.dark-mode .amiibo-card .flip-card-front,
+.dark-mode .amiibo-card .flip-card-front .flip-card-back {
+  border: 2px solid white;
+}
+.dark-mode .amiibo-card .flip-card-inner {
+  box-shadow: 0 6px 10px 0 rgba(255, 255, 255, 0.9);
+}
+.dark-mode .flip-card-front,
+.dark-mode .flip-card-back {
+  border: 2px solid white;
+}

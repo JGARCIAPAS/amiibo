@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { Amiibo } from "../../interfaces/interfaces";
+import AmiiboCard from "../AmiiboCard/AmiiboCard";
 
 interface SeriesListProps {
   amiiboSeries: (seriesName: string) => void;
@@ -51,16 +52,12 @@ const SeriesList: React.FC<SeriesListProps> = (SeriesListProps) => {
           </div>
           <ul className="amiibo-list">
             {amiiboFigures?.map((amiibo, index) => (
-              <li key={index}>
-                <Link to={encodeURIComponent(amiibo.name)}>
-                  <img
-                    src={amiibo.image}
-                    alt={amiibo.name}
-                    title={amiibo.name}
-                  />
-                  <p>{amiibo.name}</p>
-                </Link>
-              </li>
+              <AmiiboCard
+                key={index}
+                name={amiibo.name}
+                img={amiibo.image}
+                series={amiibo.amiiboSeries}
+              />
             ))}
           </ul>
         </div>
@@ -74,16 +71,12 @@ const SeriesList: React.FC<SeriesListProps> = (SeriesListProps) => {
           </div>
           <ul className="amiibo-list">
             {amiiboCards?.map((amiibo, index) => (
-              <li key={index}>
-                <Link to={encodeURIComponent(amiibo.name)}>
-                  <img
-                    src={amiibo.image}
-                    alt={amiibo.name}
-                    title={amiibo.name}
-                  />
-                </Link>
-                <p>{amiibo.name}</p>
-              </li>
+              <AmiiboCard
+                key={index}
+                name={amiibo.name}
+                img={amiibo.image}
+                series={amiibo.amiiboSeries}
+              />
             ))}
           </ul>
         </div>
@@ -97,16 +90,12 @@ const SeriesList: React.FC<SeriesListProps> = (SeriesListProps) => {
           </div>
           <ul className="amiibo-list">
             {amiiboYarns?.map((amiibo, index) => (
-              <li key={index}>
-                <Link to={amiibo.name}>
-                  <img
-                    src={amiibo.image}
-                    alt={amiibo.name}
-                    title={amiibo.name}
-                  />
-                </Link>
-                <p>{amiibo.name}</p>
-              </li>
+              <AmiiboCard
+                key={index}
+                name={amiibo.name}
+                img={amiibo.image}
+                series={amiibo.amiiboSeries}
+              />
             ))}
           </ul>
         </div>
@@ -121,16 +110,12 @@ const SeriesList: React.FC<SeriesListProps> = (SeriesListProps) => {
           </div>
           <ul className="amiibo-list">
             {amiiboBands?.map((amiibo, index) => (
-              <li key={index}>
-                <Link to={amiibo.name}>
-                  <img
-                    src={amiibo.image}
-                    alt={amiibo.name}
-                    title={amiibo.name}
-                  />
-                </Link>
-                <p>{amiibo.name}</p>
-              </li>
+              <AmiiboCard
+                key={index}
+                name={amiibo.name}
+                img={amiibo.image}
+                series={amiibo.amiiboSeries}
+              />
             ))}
           </ul>
         </div>

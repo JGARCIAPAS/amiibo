@@ -178,7 +178,7 @@ $gradient-border-hover: linear-gradient(
   rgba(249, 255, 0, 1) 75%,
   rgba(255, 0, 0, 1) 100%
 );
-$gold-card-back: linear-gradient(
+$card-front: linear-gradient(
     30deg,
     #d8c072 12%,
     transparent 12.5%,
@@ -227,6 +227,65 @@ $gold-card-back: linear-gradient(
     #d8c07277
   );
 
+$card-back: linear-gradient(
+    30deg,
+    #b7c0cc 12%,
+    transparent 12.5%,
+    transparent 87%,
+    #b7c0cc 87.5%,
+    #b7c0cc
+  ),
+  linear-gradient(
+    150deg,
+    #b7c0cc 12%,
+    transparent 12.5%,
+    transparent 87%,
+    #b7c0cc 87.5%,
+    #b7c0cc
+  ),
+  linear-gradient(
+    30deg,
+    #b7c0cc 12%,
+    transparent 12.5%,
+    transparent 87%,
+    #b7c0cc 87.5%,
+    #b7c0cc
+  ),
+  linear-gradient(
+    150deg,
+    #b7c0cc 12%,
+    transparent 12.5%,
+    transparent 87%,
+    #b7c0cc 87.5%,
+    #b7c0cc
+  ),
+  linear-gradient(
+    60deg,
+    #b7c0cc77 25%,
+    transparent 25.5%,
+    transparent 75%,
+    #b7c0cc77 75%,
+    #b7c0cc77
+  ),
+  linear-gradient(
+    60deg,
+    #b7c0cc77 25%,
+    transparent 25.5%,
+    transparent 75%,
+    #b7c0cc77 75%,
+    #b7c0cc77
+  );
+$rainbow: linear-gradient(
+  103deg,
+  rgba(255, 0, 0, 1) 0%,
+  rgba(252, 160, 0, 1) 10%,
+  rgba(249, 255, 0, 1) 18%,
+  rgba(22, 255, 0, 1) 31%,
+  rgba(0, 255, 196, 1) 47%,
+  rgba(91, 97, 255, 1) 60%,
+  rgba(201, 0, 255, 1) 81%,
+  rgba(255, 0, 0, 1) 100%
+);
 //footer colors
 
 $footer-line-color: linear-gradient(
