@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
+# Amiibo Stickers
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto de pegatinas para amiibos custom, para que se puedan imprimir y pegar en dos tipos de formatos, tarjetas nfc y monedas nfc (de 25mm). Lo que hace es llamar a la API AmiiboApi para obtener el listado de todos los amiibos disponibles, tanto figuras, tarjetas, pulseras y muñecos de lana.
+El diseño homenajea a los menus de Super Smash bros, donde cada caja de menu tiene un diseño distintivo. En la versión mobile, el diseño es distintivo pero todas tienen en comun el tamaño para no saturar la pantalla.
+Y el diseño de las pseudo-tarjetas parte de las tipicas cartas metalizadas y doradas de pokémon tcg.
 
-Currently, two official plugins are available:
+Por el momento, sólo está el diseño, las pegatinas se irán subiendo en sucesivas actualizaciones.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Links
 
-## Expanding the ESLint configuration
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/JGARCIAPAS)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/jorge-g-73712781)
 
-- Configure the top-level `parserOptions` property like this:
+## Screenshots
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+![App Screenshot](https://jgarciapas.github.io/amiibo/img/screenshots/02.png)
+![App Screenshot](https://jgarciapas.github.io/amiibo/img/screenshots/01.png)
+![App Screenshot](https://jgarciapas.github.io/amiibo/img/screenshots/03.png)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Tech Stack
+
+**Cliente:** React, Typescript, SCSS
+
+**Server:** [AmiiboAPI](https://amiiboapi.com/)
