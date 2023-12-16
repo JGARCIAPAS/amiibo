@@ -4,7 +4,7 @@ Este es un proyecto de pegatinas para amiibos custom, para que se puedan imprimi
 El diseño homenajea a los menus de Super Smash bros, donde cada caja de menu tiene un diseño distintivo. En la versión mobile, el diseño es distintivo pero todas tienen en comun el tamaño para no saturar la pantalla.
 Y el diseño de las pseudo-tarjetas parte de las tipicas cartas metalizadas y doradas de pokémon tcg.
 
-Por el momento, sólo está el diseño, las pegatinas se irán subiendo en sucesivas actualizaciones.
+Por el momento, sólo está el diseño, las pegatinas se irán subiendo en sucesivas versiones.
 
 ## 🔗 Links
 
