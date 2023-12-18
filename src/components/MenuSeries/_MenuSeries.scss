@@ -28,6 +28,10 @@
     border-image-slice: 1;
     border-width: 6px;
     border-image-source: $gradient-border-hover;
+    border-radius: 0px;
+  }
+  &:hover::after {
+    border-radius: 0px;
   }
 
   &::after {

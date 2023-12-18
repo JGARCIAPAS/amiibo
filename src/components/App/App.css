@@ -116,6 +116,10 @@
   border-image-slice: 1;
   border-width: 6px;
   border-image-source: linear-gradient(103deg, rgb(249, 255, 0) 0%, rgb(255, 0, 0) 25%, rgb(249, 255, 0) 75%, rgb(255, 0, 0) 100%);
+  border-radius: 0px;
+}
+.nav-item:hover::after {
+  border-radius: 0px;
 }
 .nav-item::after {
   content: "";
